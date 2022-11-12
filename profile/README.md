@@ -35,7 +35,7 @@ Basically getting just core patches to make AOSP buildable with common config an
 
 Initialize the repository;
 ```
-repo init -u https://github.com/structure-aosp/platform_manifest -b android-<version> --depth=1 --no-tags --no-clone-bundle --no-repo-verify
+repo init -u https://github.com/stellastructure-aosp/platform_manifest -b android-<version> --depth=1 --no-tags --no-clone-bundle --no-repo-verify
 ```
 
 > You must replace `<version>` with the corresponding AOSP version you want to build - `android-12.1.0` for 12L or `android-13.0.0` for 13 for example.
