@@ -55,10 +55,11 @@ source build/envsetup.sh
 
 Set variables for your device;
 ```
-lunch aosp_codename-variant
+lunch aosp_codename-release-variant
 ```
 
 > Replace `codename` with your device codename, such as `rosemary`.
+> Replace `release` with the AOSP release you want to build, such as `ap1a` for Android 14 QPR2.
 > Replace `variant` with the build variant you want, such as `eng`.
 
 Get to build process;
