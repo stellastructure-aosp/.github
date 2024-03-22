@@ -46,6 +46,7 @@ repo sync -c -jX --no-tags --no-clone-bundle --optimized-fetch --no-repo-verify 
 ```
 
 > You can omit `--force-sync` if you're not replacing any projects with your local manifests, in other words if your local manifest doesn't use `<remove-project />`.
+>
 > You can omit `--prune` if you're not planning to change project paths with your local manifests, in other words if you're not going to change `path=""` value in your local manifest entries.
 
 Get common functions in and prepare shell for building;
@@ -59,7 +60,9 @@ lunch aosp_codename-release-variant
 ```
 
 > Replace `codename` with your device codename, such as `rosemary`.
+>
 > Replace `release` with the AOSP release you want to build, such as `ap1a` for Android 14 QPR2.
+>
 > Replace `variant` with the build variant you want, such as `eng`.
 
 Get to build process;
