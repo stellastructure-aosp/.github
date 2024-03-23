@@ -35,14 +35,14 @@ Basically getting just core patches to make AOSP buildable with common config an
 
 Initialize the repository;
 ```
-repo init -u https://github.com/stellastructure-aosp/platform_manifest -b android-<version> --depth=1 --no-tags --no-clone-bundle --no-repo-verify
+sudo repo init -u https://github.com/stellastructure-aosp/platform_manifest -b android-<version> --depth=1 --no-tags --no-clone-bundle --no-repo-verify
 ```
 
 > You must replace `<version>` with the corresponding AOSP version you want to build - `android-12.1.0` for 12L or `android-13.0.0` for 13 for example.
 
 Sync the repositories;
 ```
-repo sync -c -jX --no-tags --no-clone-bundle --optimized-fetch --no-repo-verify --force-sync --prune
+sudo repo sync -c -jX --no-tags --no-clone-bundle --optimized-fetch --no-repo-verify --force-sync --prune
 ```
 
 > You can omit `--force-sync` if you're not replacing any projects with your local manifests, in other words if your local manifest doesn't use `<remove-project />`.
@@ -51,12 +51,12 @@ repo sync -c -jX --no-tags --no-clone-bundle --optimized-fetch --no-repo-verify 
 
 Get common functions in and prepare shell for building;
 ```
-source build/envsetup.sh
+sudo source build/envsetup.sh
 ```
 
 Set variables for your device;
 ```
-lunch aosp_codename-release-variant
+sudo lunch aosp_codename-release-variant
 ```
 
 > Replace `codename` with your device codename, such as `rosemary`.
@@ -67,12 +67,14 @@ lunch aosp_codename-release-variant
 
 Get to build process;
 ```
-m otapackage
+sudo m otapackage![image](https://github.com/stellastructure-aosp/.github/assets/164682694/a9a5b8fe-c98e-410a-a98d-6e1725cb99da)
+![download](https://github.com/stellastructure-aosp/.github/assets/164682694/55627719-250a-4f01-a4b0-4a94886075b4)
+
 ```
 
 If you want to build fastboot images instead;
 ```
-m
+sudo m
 ```
 
 ## Note for maintainers with existing device sources on AOSP
