@@ -13,7 +13,7 @@ Because everyone wanting to mess with AOSP deserve the right to do so with no cl
 
 ## When?
 
-This depends on context. Since when? Since September 25, 2022. When available? No ETA.
+This depends on context. Organization was created in September 25, 2022. First buildable source is available since March 23, 2024.
 
 ## How?
 
@@ -78,3 +78,8 @@ m
 ## Note for maintainers with existing device sources on AOSP
 
 Google's device sources are already synced alongside! You don't have to replace anything here at all! If you patch things to fix/optimize stuff, open a GitHub PR at manifest to track your own fork of it! **DO NOT USE `<remove-project />` TO REPLACE AOSP'S DEVICE SOURCES WITH YOUR OWN!**
+
+## Credits
+- [LineageOS](https://github.com/LineageOS) for the build patches and custom prebuilts.
+- [PixelExpetience](https://github.com/PixelExperience) for the initial vendor/aosp configuration.
+- [halogenOS](https://git.halogenos.org/halogenOS) for plug-and-play vendor/custom.
